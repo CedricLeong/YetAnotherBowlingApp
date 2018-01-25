@@ -55,7 +55,7 @@ class ScoreController extends Controller
         $validator = Validator::make($request->all(), [
             'score' => 'array|min:1',
             'score.*' => 'array|min:10|max:10',
-            'score.*.*' => 'numeric|max:10'
+            'score.*.*' => 'numeric|max:30'
         ]);
 
         if ($validator->fails()) {
