@@ -30,7 +30,6 @@
                         </div>
                     </div>
                 </div>
-        </div>
         </form>
 
     </div>
@@ -77,6 +76,6 @@
                 </table>
             </div>
         </div>
-        @endif
-        </div>
+    @endif
+    </div>
 @endsection
