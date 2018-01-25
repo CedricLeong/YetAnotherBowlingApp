@@ -11,6 +11,11 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Display and Set Players
+Route::get('/','UserController@index');
+
+// Display Scores and REST API of Scores
+Route::resource('scores', 'ScoreController');
+
+// REST API of Users
+Route::resource('users', 'UserController');
